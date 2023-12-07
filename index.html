@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Kalkulator Segitiga</title>
+    <h1 align="center">Welcome To Katik</h1>
+    <font size=4><p align="center">Hei sobat selamat datang di katik<br>
+        sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar
+    </font>
+<br>
+<hr size="50" color="blue"> 
+
+</head>
+
+<body>
+    <p align="center">Rumus Luas Segitiga Yaitu : <br>  <img src="LS.png">
+    <br><b>L = 1/2 x a x t</b> <br> <br>
+    dimana <br>
+    L = Luas <br>
+    a = Panjang Alas <br>
+    t = Tinggi <br>
+    
+<br>
+    Rumus Keliling Segitiga Yaitu : <br> <img src="KS.png">
+    <br><b>K = S1 + S2 + S3</b> <br> <br>
+    dimana <br>
+    K  = Keliling <br>
+    S1 = Sisi A <br>
+    S2 = Sisi B <br>
+    S3 = Sisi C <br>
+    </p>
+    <hr size="2" color="black">
+    <P align="center">silahkan isi kolom panjang sisi A, B dan C tersebut dan akan menampilkan 2 hasil
+        <br><b>Luas</b> & <b>Keliling</b></P>
+<br>
+    <div class="calculator">        
+        <form id="triangleForm">
+            <p><label for="sideA">Panjang Sisi A:</label>
+            <input type="number" id="sideA" required></p>
+
+            <p><label for="sideB">Panjang Sisi B:</label>
+            <input type="number" id="sideB" required></p>
+
+            <p><label for="sideC">Panjang Sisi C:</label>
+            <input type="number" id="sideC" required></p>
+
+            <button type="button" onclick="calculate()">Hitung</button>
+        </form>
+<br><b>JAWABAN</b><br>
+        <div id="result">
+            <p>Luas: <span id="luasResult"></span></p>
+            <p>Keliling: <span id="kelilingResult"></span></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
